@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="author" content="Softnio">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="DeFiPie is a decentralized protocol that facilitates margin trading, lending, borrowing, staking and exchanging while allowing you to maintain custody of your own private keys. DeFiPie has four powerful products of their own as well as an entire ecosystem that uses their technology to provide impressive decentralized financial services.">
-		<meta name="keywords" content="defi, defipie, defi pie, lending, borrow crypto, lend crypto, earn interest rate, crypto lending">
+		<meta name="description" content="Torch-network is a decentralized protocol that facilitates margin trading, lending, borrowing, staking and exchanging while allowing you to maintain custody of your own private keys. Torch-network has four powerful products of their own as well as an entire ecosystem that uses their technology to provide impressive decentralized financial services.">
+		<meta name="keywords" content="defi, torch, torch, lending, borrow crypto, lend crypto, earn interest rate, crypto lending">
 		<!-- Fav Icon  -->
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -92,11 +92,11 @@
                             <div class="col-sm-5">
                                 <ul class="social-links social-links-s2 justify-content-center justify-content-sm-end animated fadeInUp" data-animate="fadeInUp" data-delay="1" style="visibility: visible; animation-delay: 1s;">
                                     <li>
-                                        <!--<a href="https://twitter.com/defipiepie" target="_blank">
-                                        --><em class="fab fa-twitter"></em></a></li>
-                                    <li><!--<a href="https://t.me/defipie" target="_blank">--><em class="fab fa-telegram"></em></a></li>
-                                    <li><!--<a href="https://github.com/DefiPie" target="_blank">--><em class="fab fa-github"></em></a></li>
-                                    <li><!--<a href="https://medium.com/defipie" target="_blank">--><em class="fab fa-medium-m"></em></a></li>
+                                        <a href="https://twitter.com/" target="_blank">
+                                        <em class="fab fa-twitter"></em></a></li>
+                                    <li><a href="https://t.me/" target="_blank"><em class="fab fa-telegram"></em></a></li>
+                                    <li><a href="https://github.com/" target="_blank"><em class="fab fa-github"></em></a></li>
+                                    <li><a href="https://medium.com" target="_blank"><em class="fab fa-medium-m"></em></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -169,7 +169,7 @@
                                 <div class="feature feature-s6 feature-s6-2 animated fadeInUp" data-animate="fadeInUp" data-delay="0.4" style="visibility: visible; animation-delay: 0.4s;">
                                     <div class="feature-text">
                                         <h5 class="title title-sm ttu">LPaaS Yield-Farming</h5>
-                                        <p>Liquidity Provider can provide assets to existing pools and farm the Governance Token PIE with an annual percentage yield of up to 150%.</p>
+                                        <p>Liquidity Provider can provide assets to existing pools and farm the Governance Token TOC with an annual percentage yield of up to 115%.</p>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +177,7 @@
                                 <div class="feature feature-s6 feature-s6-1 animated fadeInUp" data-animate="fadeInUp" data-delay="0.5" style="visibility: visible; animation-delay: 0.5s;">
                                     <div class="feature-text">
                                         <h5 class="title title-sm ttu">PaaS Custom-Pools</h5>
-                                        <p>Pool as a service. User can create custom pools with a fixed rate for lending. To set up a pool the Governance Token PIE – is needed.</p>
+                                        <p>Pool as a service. User can create custom pools with a fixed rate for lending. To set up a pool the Governance Token TOC – is needed.</p>
                                     </div>
                                 </div>
                             </div>
@@ -380,14 +380,17 @@
                             <div class="row justify-content-center pb-3">
                                 <div class="col-sm-11 col-xl-11 col-xxl-8">
                                     <p class="lead animated" data-animate="fadeInUp" data-delay="0.8">The Protocol Governance Token – <strong>Toc</strong> - is distributed to those who lock value in the protocol,
-                                        providing a significant incentive to liquidity providers. As well <strong>Toc</strong> is needed to setup a liquidity pool. </p>
+                                        providing a significant incentive to liquidity providers. As well <strong>Toc</strong> is needed to setup a liquidity pool. <br/>
+                                    TOC Total is 100 million.
+                                    </p>
+                                
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 	
-                <div id="pie" style="width: 600px;height:400px;margin:0 auto;"></div>
+                <div id="toc" style="width: 600px;height:400px;margin:0 auto;"></div>
             </section>
             
             <section class="section" id="FAQ">
@@ -764,25 +767,29 @@ More exchanges will only be announced on our official channel. For legal reasons
 			}
 		})
 		 */
-var myChart = echarts.init(document.getElementById('pie'));
+var myChart = echarts.init(document.getElementById('toc'));
 var option = {
     tooltip: {
         trigger: 'item',
-        formatter: '{a} <br/>{b}: {c} ({d}%)'
+        formatter: '{a} <br/>{b}: {d}%'
     },
     legend: {
         orient: 'vertical',
-        left: 10,
-        data: ['众筹', 'UNI锁定', '推广', '基金会', '团队预留', '挖矿预留'],
+        left: 0,
+        data: ['Sale', 'LiquidityPool', 'Advertising', 'Foundation', 'Team', 'StakingReward'],
         textStyle: {
-        color: 'rgba(255, 255, 255, 0.3)'
+//      color: 'rgba(255, 255, 255, 0.3)'
+        color:'rgba(0，0，0，0)',
+        fontSize: '13',
+        fontWeight: 'bold'
+//      color:'rgba(255,0,0,0.5)'
     }
     },
     series: [
         {
-            name: '访问来源',
+            name: 'Token Details',
             type: 'pie',
-            radius: ['50%', '70%'],
+            radius: ['65%', '80%'],
             avoidLabelOverlap: false,
             label: {
                 show: false,
@@ -791,20 +798,20 @@ var option = {
             emphasis: {
                 label: {
                     show: true,
-                    fontSize: '30',
-                    fontWeight: 'bold'
+                    fontSize: '32',
+                    fontWeight: 'bold',
                 }
             },
             labelLine: {
                 show: false
             },
             data: [
-                {value: 2100, name: '众筹'},
-                {value: 1200, name: 'UNI锁定'},
-                {value: 900, name: '推广'},
-                {value: 900, name: '基金会'},
-                {value: 400, name: '团队预留'},
-                {value: 4500, name: '挖矿预留'}
+                {value: 1950, name: 'Sale'},
+                {value: 1090, name: 'LiquidityPool'},
+                {value: 430, name: 'Advertising'},
+                {value: 480, name: 'Foundation'},
+                {value: 110, name: 'Team'},
+                {value: 5940, name: 'StakingReward'}
             ]
         }
     ]

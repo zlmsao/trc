@@ -6579,7 +6579,7 @@ ul.progress-info { display: flex; justify-content: space-between; }
 
 .menu-btns > li { padding: 10px; padding: 10px; }
 
-.menu-item { position: relative; border-bottom: 1px solid rgba(219, 228, 247, 0.75); }
+.menu-item { position: relative; border-bottom: 1px solid rgba(219, 228, 247, 0.75);}
 
 .is-dark .menu-item { border-color: rgba(219, 228, 247, 0.1); }
 
