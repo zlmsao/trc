@@ -5556,7 +5556,7 @@ ul.progress-info { display: flex; justify-content: space-between; }
 
 .team-s5 .team-photo:hover .team-show { opacity: 0; }
 
-.team-photo-bg:before { position: absolute; content: ""; border-radius: 50%; top: -12px; left: -12px; right: -12px; bottom: -12px; transform: scale(1); z-index: -1; opacity: 1; transition: all .5s ease; background-image: linear-gradient(90deg, #f8aa38 0%, #FF004B 100%); }
+.team-photo-bg:before { position: absolute; content: ""; border-radius: 50%; top: -12px; left: -12px; right: -12px; bottom: -12px; transform: scale(1); z-index: -1; opacity: 1; transition: all .5s ease; /*background-image: linear-gradient(90deg, #f8aa38 0%, #FF004B 100%);*/ }
 
 .team-s3-alt .team-photo-bg:before { opacity: 0; transform: scale(0.8); }
 
@@ -5584,9 +5584,7 @@ ul.progress-info { display: flex; justify-content: space-between; }
 
 .team-social li { padding: 0 4px; display: inline-block; }
 
-.team-social li a { font-size: 13px; text-align: center; display: inline-block; line-height: 34px; height: 34px; width: 34px; border-radius: 50%; color: #fff !important; background: #f8aa38; box-shadow: 0px 2px 15px 0px rgba(248, 170, 56, 0.5); }
-
-.team-social li a:hover { color: #fff !important; background: #FF004B; box-shadow: 0px 2px 15px 0px rgba(244, 47, 84, 0.5); }
+.team-social li a { font-size: 13px; text-align: center; display: inline-block; line-height: 34px; height: 34px; width: 34px; border-radius: 50%; color: #fff !important; background: #f8aa38;}
 
 .team-social-s2 { margin: 0 -10px; }
 
