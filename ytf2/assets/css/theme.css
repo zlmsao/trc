@@ -44,10 +44,10 @@ h1.title span {
     margin: 0!important;
     text-align: left!important;
 }
-.header-bg{
-	background: url(../../images/bg.png)no-repeat;
-    background-size: 350px ;
-    background-position: 90%;
+.banner {
+    background: url(../../images/bg.jpg)no-repeat;
+    background-size: 100%;
+    background-position: 0 150px;
 }
 
 @media(max-width: 768px) {
