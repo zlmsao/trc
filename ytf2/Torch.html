@@ -57,7 +57,7 @@
                                     <li class="menu-item"><a class="menu-link nav-link" href="#FAQ">FAQ</a></li>
 								</ul>
 								<ul class="menu-btns">
-									<li><a href="#" data-toggle="modal" data-target="#subscribe-popup" class="btn btn-md btn-round btn-thin btn-outline btn-primary btn-auto no-change"><span>Connect</span></a></li>
+									<li><a href="#" data-toggle="modal" data-target="#subscribe-popup" class="btn btn-md btn-round btn-thin btn-outline btn-primary btn-auto no-change"><span id="adress" onclick="connect()">Connect</span></a></li>
 								</ul>
 							</nav>
 						<div class="header-navbar-overlay"></div></div><!-- .header-navbar @e -->
@@ -578,6 +578,53 @@ var option = {
     ]
 };
 myChart.setOption(option);
+
+
+
+	intervalHandler=window.setInterval(ttt,1000);
+                        function ttt(){
+			web3.eth.getAccounts(function (err, accounts){
+                                
+				if (accounts.length == 0){
+					$("#adress").html("Connect");
+				}else{
+                                        fromAccount = web3.eth.accounts[0];
+                                        document.getElementById('adress').innerHTML = fromAccount ;
+                                        //window.clearInterval(intervalHandler);
+				}
+                                
+			});
+			}
+
+
+
+
+	function connect(){
+//window.addEventListener('load', async () => {
+    // Modern dapp browsers...
+    if (window.ethereum) {
+        window.web3 = new Web3(ethereum);
+        try {
+            // Request account access if needed
+            return ethereum.enable();
+
+            // Acccounts now exposed
+            web3.eth.sendTransaction({/* ... */});
+        } catch (error) {
+            // User denied account access...
+        }
+    }
+    // Legacy dapp browsers...
+    else if (window.web3) {
+        window.web3 = new Web3(web3.currentProvider);
+        // Acccounts always exposed
+        web3.eth.sendTransaction({/* ... */});
+    }
+    // Non-dapp browsers...
+    else {
+        console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+    }
+	}
     </script>
 	</body>
 
