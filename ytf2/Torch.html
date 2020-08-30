@@ -7,8 +7,7 @@
 		<meta name="description" content="Torch-network is a decentralized protocol that facilitates margin trading, lending, borrowing, staking and exchanging while allowing you to maintain custody of your own private keys. Torch-network has four powerful products of their own as well as an entire ecosystem that uses their technology to provide impressive decentralized financial services.">
 		<meta name="keywords" content="defi, torch, torch, lending, borrow crypto, lend crypto, earn interest rate, crypto lending">
 		<!-- Fav Icon  -->
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/torch.ico" type="image/x-icon"  sizes="16x16"/>
 		<!-- Site Title  -->
 		<title>Torch-network</title>
 		<!-- Bundle and Base CSS -->
@@ -18,7 +17,7 @@
 		<link rel="stylesheet" href="assets/css/theme.css?ver=192">
 			<link rel="stylesheet" href="css/tilda-grid-3.0.min.css" type="text/css" media="all">
 			<link rel="stylesheet" href="css/tilda-blocks-2.12.css?t=1597596896" type="text/css" media="all">
-			<link href="css/chunk-vendors.752dfc7b.css" rel="preload" as="style">
+			<link href="/css/chunk-vendors.752dfc7b.css" rel="preload" as="style">
 			
 
 		
@@ -58,7 +57,7 @@
                                     <li class="menu-item"><a class="menu-link nav-link" href="#FAQ">FAQ</a></li>
 								</ul>
 								<ul class="menu-btns">
-									<li><a href="#" data-toggle="modal" data-target="#subscribe-popup" class="btn btn-md btn-round btn-thin btn-outline btn-primary btn-auto no-change"><span>Token sale</span></a></li>
+									<li><a href="#" data-toggle="modal" data-target="#subscribe-popup" class="btn btn-md btn-round btn-thin btn-outline btn-primary btn-auto no-change"><span id="adress" onclick="connect()">Connect</span></a></li>
 								</ul>
 							</nav>
 						<div class="header-navbar-overlay"></div></div><!-- .header-navbar @e -->
@@ -66,9 +65,9 @@
 				</div>
 			</div><!-- .header-main @e -->
 
-            <div class="banner banner-fs tc-light">
+            <div class="banner banner-fs tc-light header-bg">
 
-                <div class="nk-block nk-block-header nk-block-sm my-auto header-bg">
+                <div class="nk-block nk-block-header nk-block-sm my-auto ">
                     <div class="container pt-5">
                         <div class="banner-caption text-center">
                             <h1 class="title title--small ttu animated fadeInUp" data-animate="fadeInUp" data-delay="0.7" style="visibility: visible; animation-delay: 0.7s;">
@@ -77,8 +76,8 @@
                        
                             <div class="cpn-action">
                                 <ul class="btn-grp mx-auto">
-                                    <li class="animated fadeInUp" data-animate="fadeInUp" data-delay="0.9" style="visibility: visible; animation-delay: 0.9s;"><a href="#" target="_self" class="btn btn-primary btn-round">Join the beta version!</a></li>
-                                    <li class="animated fadeInUp" data-animate="fadeInUp" data-delay="1" style="visibility: visible; animation-delay: 1s;"><a href="#" data-toggle="modal" data-target="#subscribe-popup" class="menu-link btn btn-round btn-outline btn-primary">Token sale</a></li>
+                                    <li class="animated fadeInUp" data-animate="fadeInUp" data-delay="0.9" style="visibility: visible; animation-delay: 0.9s;"><a href="Beta.html" target="_self" class="btn btn-primary btn-round">Join the beta version!</a></li>
+                                    <!--<li class="animated fadeInUp" data-animate="fadeInUp" data-delay="1" style="visibility: visible; animation-delay: 1s;"><a href="#" data-toggle="modal" data-target="#subscribe-popup" class="menu-link btn btn-round btn-outline btn-primary">Token sale wite</a></li>-->
                                 </ul>
                             </div>
                         </div>
@@ -134,7 +133,6 @@
 									<p>Liquidity miners can provide assets to existing asset pools with an annual percentage return rate of up to 115%  and manage Torch DAO by the vote of token .</p>
 									<p>Users can also stake PoS-based assets in existing pools to earn staking rewards according to the underlying protocols.</p>
 									<p>In addition, the governance token of Torch has a transfer burning mechanism, and each transfer has a relatively high probability burning 3% of the transfer amount.(Of course, if you're lucky, you might get more Toc.：)</p>
-									
                                 </div>
                             </div>
                         </div>
@@ -282,9 +280,9 @@
 									<p>Users will be able to borrow relatively little collateral on Torch, and enjoy borrowing or even unsecured loans.TORCH is based on the Ethereum blockchain network, which ensures security and reliability, while providing unlimited scalability.</p>
 									<p>Due to credit checks and third-party interference, centralized banking may also be inaccessible.Using Torch and Ethereum eliminates the need for a third party to participate, thus simplifying investment and financial management and making it more private.</p>
 									<p>Torch network is a reinterpreted DeFi protocol that specifically provides users with various loan services, such as small loans and unsecured loan services, so that DeFi services can basically be used by all users. In addition, Torch also supports the tokenization of assets and derivatives (such as CDS, etc.).</p>
-									<p>There is no financial institution to monitor personal finances and expenditures, but to establish smart contracts. Smart contracts are contracts encrypted into the blockchain, and assets will be released to the recipient in real time.
-										&nbsp;&nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#subscribe-popup" class="btn btn-md btn-round btn-thin btn-outline btn-primary btn-auto no-change"><span>wait</span></a></p>
-                                </div>
+									<p>There is no financial institution to monitor personal finances and expenditures, but to establish smart contracts. Smart contracts are contracts encrypted into the blockchain, and assets will be released to the recipient in real time.</p>
+                                									&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#subscribe-popup" class="btn btn-md btn-round btn-thin btn-outline btn-primary btn-auto no-change"><span>wait...</span></a></p>
+                               	</div>
                            </div>
                             <div class="col-lg-5">
                             	<div class="gfx py-4 row justify-content-center animated fadeInUp" data-animate="fadeInUp" data-delay="0.2" style="visibility: visible; animation-delay: 0.2s;">
@@ -320,13 +318,13 @@
                                     <div class="team-photo team-photo-s2">
                                         <img src="assets/images/team/a1.png" alt="">
                                     </div>
-                                    <h5 class="team-name title title-md">程序猿</h5>
-                                    <span class="team-position">CEO &amp; Co-Founder / Lead Software Developer</span>
-									<div class="cv">Serial entrepreneur, investor, and advisor to technology startups. Successful web developer with an experience of eight years. Ex Developer at Wings, Switzerland. Blockchain developer with six years of experience. Hackathon organizer and participant around the world. Involved and invested in crypto since end of 2013. Deep understanding of the underlying technology and PoS.</div>
+                                    <h5 class="team-name title title-md">Kevin Hunter</h5>
+                                    <span class="team-position">Data Analyst/Development Engineer - Torch Network</span>
+									<div class="cv">As founder and lead developer, I will responsible for the development of the upcoming Torch protocol.I graduate from University of Zagreb/Sveuciliste u Zagrebu while I am interested Date Analyst and insist 10 years. More information had update in my Linkedin,you can found more information about my previous works,now, welcome to join our new project——Torch protocol.</div>
                                     <ul class="team-social team-social-s2">
-                                        <li><em class="fab fa-linkedin-in"></em></a></li>
-                                        <li><em class="fab fa-twitter"></em></a></li>
-										<li><em class="fab fa-facebook-f"></em></a></li>
+                                        <li><a href="https://www.linkedin.com/in/kevin-hunter-0323291b3"><em class="fab fa-linkedin-in"></em></a></li>
+                                        <!--<li><em class="fab fa-twitter"></em></a></li>-->
+										<!--<li><em class="fab fa-facebook-f"></em></a></li>-->
                                     </ul>
                                 </div>
                             </div></div><div class="owl-item active" style="width: 330px; margin-right: 30px;"><div class="item animated" data-animate="fadeInUp" data-delay="0.4">
@@ -334,13 +332,14 @@
                                     <div class="team-photo team-photo-s2">
                                         <img src="assets/images/team/a2.jpg" alt="">
                                     </div>
-                                    <h5 class="team-name title title-md">攻城狮</h5>
-                                    <span class="team-position">CTO &amp; Co-Founder / Lead Blockchain Developer</span>
-									<div class="cv">Business Builder and Adoption Finder. Winner of “Startup Chile” with a price of 35K$. Founder of Smart Progress with over 250K user. Founder of a distributed file sharing system with over 100K user per day. Advisor to notable Russian software companies. 15 years of experience in Software Development. Four years of experience as a Blockchain Architect. Strong interest in emerging technologies and governance.</div>
+                                    <h5 class="team-name title title-md">Edmund Young</h5>
+                                    <span class="team-position">Development Engineer - Torch Network</span>
+									<div class="cv">edmund young graduated from University of California State University, Fullerton. edmud has a grfted of Development engineering,
+Experienced Development Engineer with a demonstrated history of working in the information technology and services industry. Skilled in C++/C,JAVA,SPARK,angular js , react js and Python. Strong engineering professional with a Bachelor’s Degree focused in Information technology from California State University.</div>
                                     <ul class="team-social team-social-s2">
-                                        <li><em class="fab fa-linkedin-in"></em></a></li>
-										<li><em class="fab fa-twitter"></em></a></li>
-										<li><em class="fab fa-facebook-f"></em></a></li>
+                                        <li><a href="https://www.linkedin.com/in/edmund-young-8089661b5"><em class="fab fa-linkedin-in"></em></a></li>
+										<!--<li><em class="fab fa-twitter"></em></a></li>
+										<li><em class="fab fa-facebook-f"></em></a></li>-->
                                     </ul>
                                 </div>
                                 
@@ -349,12 +348,13 @@
                                     <div class="team-photo team-photo-s2">
                                         <img src="assets/images/team/a3.jpg" alt="">
                                     </div>
-                                    <h5 class="team-name title title-md">码农</h5>
-                                    <span class="team-position">CMO &amp; Founding Member / Lead UI-UX-Developer</span>
-									<div class="cv">Entrepreneur with a passion for UI/UX design. Eight years of experience in UI/UX design. Lead UX designer at Aplana. Basic experience in multiple programming languages. Helped startups to scale.</div>
+                                    <h5 class="team-name title title-md">Antony Bronte</h5>
+                                    <span class="team-position">Planning Manager - Torch Network</span>
+									<div class="cv">Ecommerce Specialist at Amazon Web Services (AWS).Antony Bronte is an indispensable partner who has great experience of Market manage,  Antony Bronte graduated from the concordia University lrvine,Over the past nine years, he has signed tens of millions of dollars in e-commerce orders.
+He has rich experience in platform operation and user operation.</div>
                                     <ul class="team-social team-social-s2">
-                                        <li><em class="fab fa-linkedin-in"></em></a></li>
-										<li><em class="fab fa-facebook-f"></em></a></li>
+                                        <li><a href="http://www.linkedin.com/in/antony-bronte-82b6041b5"><em class="fab fa-linkedin-in"></em></a></li>
+										<!--<li><em class="fab fa-facebook-f"></em></a></li>-->
                                     </ul>
                                 </div>
                                 
@@ -408,197 +408,7 @@
                 
                 <div class="container container-xxl">
 					
-							<!--
-                            <div class="nav1">
-								<div class="problem">
-										<div  style=" border-top: 1px solid #eee;">
-											<div style="font-size:20px;"><span style="font-weight: 400;">HOW I CAN TRUST YOU?</span>
-												<br>
-											</div>
-											
-													<svg class="switch" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
-															<g transform="translate(1.000000, 1.000000)" stroke="#ffa724">
-																<path d="M0,11 L22,11"></path>
-																<path d="M11,0 L11,22"></path>
-															</g>
-														</g>
-													</svg>
-													<svg style="display: none;" class="switch" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
-															<g transform="translate(1.000000, 1.000000)" stroke="#030303">
-																<path d="M0,11 L22,11"></path>
-																<path d="M11,0 L11,22"></path>
-															</g>
-														</g>
-													</svg>
-												
-										</div>
-										<div class="answer" style="display: none;">
-											<div style="font-size:17px;">You don't have to trust anyone. Our contracts remove any need to trust a third party and will be available for your audit. All raised ETH will be locked into Uniswap $ZORI/ETH liquidity pool in a verifiable manner. In addition, the ZORI Team are
-												buying their own tokens at the same price as everyone else with no discounts or bonuses.
-											</div>
-										</div>
-								</div>
-								<div class="problem">
-										<div  style=" border-top: 1px solid #eee;">
-											<div style="font-size:20px;"><span style="font-weight: 400;">WHAT ARE YOU USING THE FUNDS FROM THE COMMUNITY SALE FOR?</span>
-												<br>
-											</div>
-											
-													<svg class="switch" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
-															<g transform="translate(1.000000, 1.000000)" stroke="#ffa724">
-																<path d="M0,11 L22,11"></path>
-																<path d="M11,0 L11,22"></path>
-															</g>
-														</g>
-													</svg>
-													<svg style="display: none;" class="switch" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
-															<g transform="translate(1.000000, 1.000000)" stroke="#030303">
-																<path d="M0,11 L22,11"></path>
-																<path d="M11,0 L11,22"></path>
-															</g>
-														</g>
-													</svg>
-												
-										</div>
-										<div class="answer" style="display: none;">
-											<div style="font-size:17px;">50% of the ETH funds collected during the sales will be locked in the UniSwap Pool and will serve as a continual source of liquidity. The remaining 50% is for future exchange listings, marketing, security audits, web development, dapp development,
-													and further development in general.
-											</div>
-										</div>
-								</div>
-								<div class="problem">
-										<div  style=" border-top: 1px solid #eee;">
-											<div style="font-size:20px;"><span style="font-weight: 400;">WHERE WILL ZORI BE LISTED?</span>
-												<br>
-											</div>
-											
-													<svg class="switch" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
-															<g transform="translate(1.000000, 1.000000)" stroke="#ffa724">
-																<path d="M0,11 L22,11"></path>
-																<path d="M11,0 L11,22"></path>
-															</g>
-														</g>
-													</svg>
-													<svg style="display: none;" class="switch" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
-															<g transform="translate(1.000000, 1.000000)" stroke="#030303">
-																<path d="M0,11 L22,11"></path>
-																<path d="M11,0 L11,22"></path>
-															</g>
-														</g>
-													</svg>
-												
-										</div>
-										<div class="answer" style="display: none;">
-											<div style="font-size:17px;">Uniswap – with an initial liquidity of 400.000 USD (will be locked via Unicrypt)
-													<br> More exchanges will be announced on our official channels only. We can't comment on this for legal reasons.
-													<br>
-											</div>
-										</div>
-								</div>
-								
-								<div class="problem">
-										<div  style=" border-top: 1px solid #eee;">
-											<div style="font-size:20px;"><span style="font-weight: 400;">IS THERE A WHITEPAPER?</span>
-												<br>
-											</div>
-											
-													<svg class="switch" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
-															<g transform="translate(1.000000, 1.000000)" stroke="#ffa724">
-																<path d="M0,11 L22,11"></path>
-																<path d="M11,0 L11,22"></path>
-															</g>
-														</g>
-													</svg>
-													<svg style="display: none;" class="switch" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
-															<g transform="translate(1.000000, 1.000000)" stroke="#030303">
-																<path d="M0,11 L22,11"></path>
-																<path d="M11,0 L11,22"></path>
-															</g>
-														</g>
-													</svg>
-												
-										</div>
-										<div class="answer" style="display: none;">
-											<div style="font-size:17px;">Uniswap – with an initial liquidity of 400.000 USD (will be locked via Unicrypt)
-													The whitepaper is currently under review and will be ready for publication in the coming days. Join our twitter to stay informed.
-		
-											</div>
-										</div>
-								</div>
 							
-								<div class="problem">
-										<div  style=" border-top: 1px solid #eee;">
-											<div style="font-size:20px;"><span style="font-weight: 400;">WHAT SHOULD I DO IF I MISSED THE PUBLIC SALE?</span>
-												<br>
-											</div>
-											
-													<svg class="switch" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
-															<g transform="translate(1.000000, 1.000000)" stroke="#ffa724">
-																<path d="M0,11 L22,11"></path>
-																<path d="M11,0 L11,22"></path>
-															</g>
-														</g>
-													</svg>
-													<svg style="display: none;" class="switch" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
-															<g transform="translate(1.000000, 1.000000)" stroke="#030303">
-																<path d="M0,11 L22,11"></path>
-																<path d="M11,0 L11,22"></path>
-															</g>
-														</g>
-													</svg>
-												
-										</div>
-										<div class="answer" style="display: none;">
-											<div style="font-size:17px;">Uniswap – with an initial liquidity of 400.000 USD (will be locked via Unicrypt)
-											You can continue to monitor our Twitter page for upcoming bounty programs that will allow more and more people to become part of the ZORI community and to understand the ZORI concept.		
-											</div>
-										</div>
-								</div>
-							
-								<div class="problem">
-										<div  style=" border-top: 1px solid #eee;">
-											<div style="font-size:20px;"><span style="font-weight: 400;">HOW CAN I CONTACT YOU?</span>
-												<br>
-											</div>
-											
-													<svg class="switch" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
-															<g transform="translate(1.000000, 1.000000)" stroke="#ffa724">
-																<path d="M0,11 L22,11"></path>
-																<path d="M11,0 L11,22"></path>
-															</g>
-														</g>
-													</svg>
-													<svg style="display: none;" class="switch" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-														<g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
-															<g transform="translate(1.000000, 1.000000)" stroke="#030303">
-																<path d="M0,11 L22,11"></path>
-																<path d="M11,0 L11,22"></path>
-															</g>
-														</g>
-													</svg>
-												
-										</div>
-										<div class="answer" style="display: none;">
-											<div style="font-size:17px;">Uniswap – with an initial liquidity of 400.000 USD (will be locked via Unicrypt)
-												<br> marketing@zori.network - marketing and bounty
-												<br> team@zori.network - any other questions
-												<br>
-											</div>
-										</div>
-								</div>
-							</div>
-                            -->
                             <div class="t585">
                <div class="t-container" style="background-color: #1f1646; width: 60%;">
                   <div class="t-col t-col_8 t-prefix_2">
@@ -686,7 +496,7 @@ More exchanges will only be announced on our official channel. For legal reasons
                            </div>
                            <div class="t585__content" style="display: block;">
                               <div class="t585__textwrapper">
-                                 <div class="t585__text t-descr t-descr_xs" field="li_descr__1597416903408" style="font-size:17px;">sales@torch.network - private sale / public sale <br> marketing@torch.network - marketing and bounty <br> team@torch.network - any other questions <br></div>
+                                 <div class="t585__text t-descr t-descr_xs" field="li_descr__1597416903408" style="font-size:17px;">sales@torchnet.online - private sale / public sale <br> marketing@torchnet.online - marketing and bounty <br> team@torchnet.online - any other questions <br></div>
                               </div>
                            </div>
                         </div>
@@ -704,7 +514,7 @@ More exchanges will only be announced on our official channel. For legal reasons
             <div class="container container-xxl">
                 <div class="row gutter-vr-10px">
                     <div class="col-lg-6">
-                        <div class="copyright-text copyright-text-s2">Copyright © 2020 Torch-network. Handicrafts full of love from A1 and A2.</div>
+                        <div class="copyright-text copyright-text-s2">Copyright © 2020 Torch-network. Handicrafts full of love from Kevin and Edmund.</div>
                     </div>
                 </div>
             </div>
@@ -714,60 +524,10 @@ More exchanges will only be announced on our official channel. For legal reasons
 	<script src="assets/js/scripts.js?ver=192"></script>
     <script src="assets/js/toastr.examples.js?ver=192"></script>
     <script src="assets/js/charts.js"></script>
-    <script>
-		/*
-		 * $(function() {
-			var ali = $(".nav1 div .switch")
-			for (var i = 0; i < ali.length; i++) {
-				ali.filter(":even").click(function() {
-		
-					if ($(this).parents('.problem').find(".answer").is(':hidden')) {
-						console.log('测试');
-						$(this).parents('.problem').find(".answer").show();
-						$(this).hide();
-						$(this).next().show();
-					}
-				})
-				ali.filter(":odd").click(function() {
-		
-					if (!$(this).parents('.problem').find(".answer").is(':hidden')) {
-						console.log('测试');
-						$(this).parents('.problem').find(".answer").hide();
-						$(this).hide();
-						$(this).prev().show();
-					}
-				})
-			}
-		})
-		 */
-    </script>
+   
     <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
     <script>
-		/*
-		 * $(function() {
-			var ali = $(".nav1 div .switch")
-			for (var i = 0; i < ali.length; i++) {
-				ali.filter(":even").click(function() {
 		
-					if ($(this).parents('.problem').find(".answer").is(':hidden')) {
-						console.log('测试');
-						$(this).parents('.problem').find(".answer").show();
-						$(this).hide();
-						$(this).next().show();
-					}
-				})
-				ali.filter(":odd").click(function() {
-		
-					if (!$(this).parents('.problem').find(".answer").is(':hidden')) {
-						console.log('测试');
-						$(this).parents('.problem').find(".answer").hide();
-						$(this).hide();
-						$(this).prev().show();
-					}
-				})
-			}
-		})
-		 */
 var myChart = echarts.init(document.getElementById('toc'));
 var option = {
     tooltip: {
@@ -818,6 +578,53 @@ var option = {
     ]
 };
 myChart.setOption(option);
+
+
+
+	intervalHandler=window.setInterval(ttt,1000);
+                        function ttt(){
+			web3.eth.getAccounts(function (err, accounts){
+                                
+				if (accounts.length == 0){
+					$("#adress").html("Connect");
+				}else{
+                                        fromAccount = web3.eth.accounts[0];
+                                        document.getElementById('adress').innerHTML = fromAccount ;
+                                        //window.clearInterval(intervalHandler);
+				}
+                                
+			});
+			}
+
+
+
+
+	function connect(){
+//window.addEventListener('load', async () => {
+    // Modern dapp browsers...
+    if (window.ethereum) {
+        window.web3 = new Web3(ethereum);
+        try {
+            // Request account access if needed
+            return ethereum.enable();
+
+            // Acccounts now exposed
+            web3.eth.sendTransaction({/* ... */});
+        } catch (error) {
+            // User denied account access...
+        }
+    }
+    // Legacy dapp browsers...
+    else if (window.web3) {
+        window.web3 = new Web3(web3.currentProvider);
+        // Acccounts always exposed
+        web3.eth.sendTransaction({/* ... */});
+    }
+    // Non-dapp browsers...
+    else {
+        console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+    }
+	}
     </script>
 	</body>
 
