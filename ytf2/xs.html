@@ -16,7 +16,8 @@
 			}
 			body{
 				font-family: "华文细黑";
-				background: #671b99;
+				background: url(images/xsbg.png);
+				background-size: 100%;
 				
 			}
 			.mianban{
@@ -48,16 +49,16 @@
 				<p style="margin-left:50px;color:#a802ff;">YOU CURRENTLY HAVE 0 DAPP.</p>
 			</div>
 			<div style="margin-left: 130px; margin-top: 35px;">
-					<input style="border:none;width: 100px; height: 30px;" type="text" id="amount" >
+					<input style="border:none;width: 100px; height: 30px;outline: none;font-size: 20px;" type="text" id="amount" >
 					<button style="margin-left: 85px;background: none;border: none; color: white;font-weight: 600;" onclick="sendTransaction()">BUY TOKENS</button>
 			</div>
-			<div style="margin: 35px 47px;">
+			<div style="margin: 35px 47px 10px 47px;">
 				<progress value="20" max="1000000" style="width: 57.5%;"></progress>
 				<div style="text-align: center;width: 57.5%;color: #FFFFFF;">
 					<span id="progressval" style="dfont-weight: 700;width: 57.5%;">0</span>/1000000 TOKENS SOLD
 				</div>
 			</div>
-			<div style="margin: 0px 15px 30px 55px;">
+			<div style="margin: 0px 15px 30px 75px;">
 				<span style="font-size: 11px; color: #FFFFFF;">Your Account:</span>
 				<span style="font-size: 11px; margin-left:10px;color: #000000; id="adress" onclick="connect()"></span>
 			</div>
